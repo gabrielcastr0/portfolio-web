@@ -40,7 +40,34 @@ html::-webkit-scrollbar-thumb{
 body{
   background: #111;
   overflow-x: hidden;
+  padding-left: 35rem;
 }
+
+section{
+  min-height: 100vh;
+  padding: 1rem;
+}
+
+.btn{
+  padding: .7rem 3rem;
+  background: #333;
+  color: #FFF;
+  cursor: pointer;
+  margin-top: 1rem;
+  font-size: 2rem;
+  border-radius: 0.625rem;
+}
+
+.btn i{
+  padding: 0 .5rem;
+  font-size: 1.8rem;
+}
+
+.btn:hover{
+  background: var(--red);
+}
+
+/* Header */ 
 
 header{
   position: fixed;
@@ -60,10 +87,10 @@ header{
 header .user img{
   height: 17rem;
   width: 17rem;
-  border-radius: 50%;
+  border-radius: 0.625rem;
   object-fit: cover;
   margin-bottom: 1rem;
-  border: .7rem solid var(--red);
+  border: .5rem solid var(--red);
 }
 
 header .user .name{
@@ -112,11 +139,59 @@ header .navbar ul li a:hover{
   display: none;
 }
 
+.home{
+  display: flex;
+  justify-content: center;
+  flex-flow: column;
+  padding: 0 15rem;
+}
+
+.home h3{
+  font-size: 2.5rem;
+  color: #FFF;
+}
+
+.home h1{
+  font-size: 5rem;
+  color: #FFF;
+}
+
+.home h1 span{
+  color: var(--red);
+}
+
+.home p{
+  font-size: 2rem;
+  color: #EEE;
+  padding: 1rem 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* Responsive */ 
 
 @media (max-width: 1200px){
   html{
     font-size: 55%;
+  }
+
+  .home{
+    padding: 1rem 4rem;
   }
 }
 
@@ -131,6 +206,10 @@ header .navbar ul li a:hover{
 
   header.toggle{
     left: 0%;
+  }
+
+  body{
+    padding: 0;
   }
 }
 
