@@ -99,7 +99,7 @@ header .navbar ul li a:hover{
   background: var(--red);
 }
 
-/* #menu{
+#menu{
   position: fixed;
   top: 2rem;
   right: 2rem;
@@ -109,4 +109,39 @@ header .navbar ul li a:hover{
   font-size: 2.5rem;
   padding: 1rem 1.5rem;
   z-index: 1000;
-} */
+  display: none;
+}
+
+/* Responsive */ 
+
+@media (max-width: 1200px){
+  html{
+    font-size: 55%;
+  }
+}
+
+@media (max-width: 991px){
+  header{
+    left: -120%;
+  }
+
+  #menu{
+    display: block;
+  }
+
+  header.toggle{
+    left: 0%;
+  }
+}
+
+@media (max-width: 768px){
+  html{
+    font-size: 50%;
+  }
+}
+
+@media (max-width: 400px){
+  header{
+    width: 100vw;
+  }
+}
