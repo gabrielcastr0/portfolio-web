@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap');
 
 :root{
-  --red: #FF2D00;
+  --green: #00DF25;
 }
 
 *{
@@ -16,7 +16,7 @@
 }
 
 *::selection{
-  background: var(--red);
+  background: var(--green);
   color: #333;
 }
 
@@ -34,7 +34,7 @@ html::-webkit-scrollbar-track{
 }
 
 html::-webkit-scrollbar-thumb{
-  background:var(--red);
+  background:var(--green);
 }
 
 body{
@@ -64,7 +64,20 @@ section{
 }
 
 .btn:hover{
-  background: var(--red);
+  background: var(--green);
+}
+
+.heading{
+  text-align: center;
+  margin: 0 6rem;
+  font-size: 4rem;
+  padding: 1rem;
+  border-bottom: .1rem solid #FFF4;
+  color: #FFF;
+}
+
+.heading span{
+  color: var(--green);
 }
 
 /* Header */ 
@@ -90,7 +103,7 @@ header .user img{
   border-radius: 0.625rem;
   object-fit: cover;
   margin-bottom: 1rem;
-  border: .5rem solid var(--red);
+  border: .5rem solid var(--green);
 }
 
 header .user .name{
@@ -123,7 +136,7 @@ header .navbar ul li a{
 }
 
 header .navbar ul li a:hover{
-  background: var(--red);
+  background: var(--green);
 }
 
 #menu{
@@ -157,7 +170,7 @@ header .navbar ul li a:hover{
 }
 
 .home h1 span{
-  color: var(--red);
+  color: var(--green);
 }
 
 .home p{
@@ -166,6 +179,56 @@ header .navbar ul li a:hover{
   padding: 1rem 0;
 }
 
+.about .row{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 1rem 0;
+}
+
+.about .row .info{
+  flex: 1 1 48rem;
+  padding: 2rem 1rem;
+  padding-left: 6rem;
+}
+
+.about .row .info h3{
+  font-size: 2rem;
+  color: var(--green);
+  padding: 1rem 0;
+  font-weight: normal;
+}
+
+.about .row .info h3 span{
+  color: #EEE;
+  padding: 0 .5rem;
+}
+
+.about .row .counter{
+  flex: 1 1 48rem;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.about .row .counter .box{
+  width: 20rem;
+  background: #222;
+  text-align: center;
+  padding: 2rem;
+  margin: 2rem;
+}
+
+.about .row .counter .box span{
+  font-size: 4rem;
+  color: var(--green);
+}
+
+.about .row .counter .box h3{
+  font-size: 2rem;
+  color: #FFF;
+}
 
 
 
@@ -222,5 +285,13 @@ header .navbar ul li a:hover{
 @media (max-width: 400px){
   header{
     width: 100vw;
+  }
+
+  .heading{
+    margin: 0 3rem;
+  }
+
+  .about .row .counter .box{
+    width: 100%;
   }
 }
