@@ -152,6 +152,8 @@ header .navbar ul li a:hover{
   display: none;
 }
 
+/* Home */ 
+
 .home{
   display: flex;
   justify-content: center;
@@ -178,6 +180,8 @@ header .navbar ul li a:hover{
   color: #EEE;
   padding: 1rem 0;
 }
+
+/* Sobre */ 
 
 .about .row{
   display: flex;
@@ -230,6 +234,34 @@ header .navbar ul li a:hover{
   color: #FFF;
 }
 
+/* Projetos */ 
+
+.portfolio .box-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 2rem 0;
+}
+
+.portfolio .box-container .box{
+  height: 20rem;
+  width: 26rem;
+  border-radius: 1rem;
+  margin: 2rem;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.portfolio .box-container .box img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.portfolio .box-container .box:hover img{
+  transform: scale(1.2);
+}
 
 
 
@@ -292,6 +324,10 @@ header .navbar ul li a:hover{
   }
 
   .about .row .counter .box{
+    width: 100%;
+  }
+
+  .portfolio .box-container .box{
     width: 100%;
   }
 }
