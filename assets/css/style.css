@@ -220,6 +220,7 @@ header .navbar ul li a:hover{
   width: 20rem;
   background: #222;
   text-align: center;
+  border-radius: 0.625rem;
   padding: 2rem;
   margin: 2rem;
 }
@@ -232,6 +233,31 @@ header .navbar ul li a:hover{
 .about .row .counter .box h3{
   font-size: 2rem;
   color: #FFF;
+}
+
+/* Skills */
+
+.skills .counter{
+  /* flex: 1 1 48rem; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.skills .counter .box{
+  width: 20rem;
+  background: #222;
+  text-align: center;
+  border-radius: 0.625rem;
+  padding: 2rem;
+  margin-top: 2rem;
+  margin-right: 1rem;
+}
+
+.skills .counter span{
+  font-size: 2.5rem;
+  color: var(--green);
 }
 
 /* Projetos */ 
