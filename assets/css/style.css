@@ -26,7 +26,7 @@ html{
 }
 
 html::-webkit-scrollbar{
-  width: 1.4rem;
+  width: 1rem;
 }
 
 html::-webkit-scrollbar-track{
@@ -38,7 +38,13 @@ html::-webkit-scrollbar-thumb{
 }
 
 body{
-  background: #111;
+  background:
+  radial-gradient(black 15%, transparent 16%) 0 0,
+  radial-gradient(black 15%, transparent 16%) 8px 8px,
+  radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 0 1px,
+  radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 8px 9px;
+  background-color:#282828;
+  background-size:16px 16px;
   overflow-x: hidden;
   padding-left: 35rem;
 }
@@ -89,7 +95,7 @@ header{
   z-index: 1000;
   height: 100%;
   width: 35rem;
-  background: #1a1a1a;
+  background: rgba(0, 0, 0, 0.2);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -216,6 +222,13 @@ header .navbar ul li a:hover{
   flex-wrap: wrap;
 }
 
+.box{
+  height: 90px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .about .row .counter .box{
   width: 20rem;
   background: #222;
@@ -256,7 +269,7 @@ header .navbar ul li a:hover{
 }
 
 .skills .counter span{
-  font-size: 2.5rem;
+  font-size: 2.3rem;
   color: var(--green);
 }
 
