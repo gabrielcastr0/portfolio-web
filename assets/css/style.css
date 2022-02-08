@@ -95,12 +95,16 @@ header{
   z-index: 1000;
   height: 100%;
   width: 35rem;
-  background: rgba(0, 0, 0, 0.2);
+  background: rgba(0, 0, 0, 0.3);
   display: flex;
   align-items: center;
   justify-content: center;
   flex-flow: column;
   text-align: center;
+
+  @media screen and (max-width: 768px){
+    background: rgba(0, 0, 0, 1);
+  }
 }
 
 header .user img{
