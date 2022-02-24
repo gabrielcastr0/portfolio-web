@@ -101,10 +101,6 @@ header{
   justify-content: center;
   flex-flow: column;
   text-align: center;
-
-  @media screen and (max-width: 768px){
-    background: rgba(0, 0, 0, 1);
-  }
 }
 
 header .user img{
@@ -222,8 +218,9 @@ header .navbar ul li a:hover{
 .about .row .counter{
   flex: 1 1 48rem;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   flex-wrap: wrap;
+  padding-left: 5rem;
 }
 
 .box{
@@ -231,6 +228,7 @@ header .navbar ul li a:hover{
   display: flex;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
 }
 
 .about .row .counter .box{
@@ -239,7 +237,7 @@ header .navbar ul li a:hover{
   text-align: center;
   border-radius: 0.625rem;
   padding: 2rem;
-  margin: 2rem;
+  margin: 1rem;
 }
 
 .about .row .counter .box span{
@@ -252,10 +250,13 @@ header .navbar ul li a:hover{
   color: #FFF;
 }
 
+.about .box:hover{
+  transform: scale(1.05);
+}
+
 /* Skills */
 
 .skills .counter{
-  /* flex: 1 1 48rem; */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -270,11 +271,16 @@ header .navbar ul li a:hover{
   padding: 2rem;
   margin-top: 2rem;
   margin-right: 1rem;
+  cursor: pointer;
 }
 
 .skills .counter span{
   font-size: 2.3rem;
   color: var(--green);
+}
+
+.skills .box:hover{
+  transform: scale(1.05);
 }
 
 /* Projetos */ 
@@ -355,6 +361,10 @@ header .navbar ul li a:hover{
 @media (max-width: 768px){
   html{
     font-size: 50%;
+  }
+
+  header{
+    background: #000;
   }
 }
 
